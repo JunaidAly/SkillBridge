@@ -2,6 +2,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
+import HowItWorks from '../components/HowItWorks';
+import CTA from '../components/CTA';
 
 function LandingPage() {
   return (
@@ -10,6 +12,8 @@ function LandingPage() {
       <main className="grow">
         <Hero />
         <Features />
+        <HowItWorks />
+        <CTA />
       </main>
       <Footer />
     </div>
