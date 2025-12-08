@@ -1,3 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-light-bg: #FAFBFB;
+  --color-dark-blue: #1B2847;
+  --color-medium-blue: #2B3A5C;
+  --color-teal: #2A9D90;
+  --color-light-teal: #EDF7F6;
+  --color-red-opacity: #FF000040;
+  --color-red: #FF0000;
+
+  --font-family-josefin: "Josefin Sans", sans-serif;
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-inter: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .bg-gradient-blue {
+    background: linear-gradient(90deg, #1B2847 0%, #2B3A5C 100%);
+  }
+}

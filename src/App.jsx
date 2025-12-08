@@ -1,7 +1,7 @@
+import LandingPage from './pages/LandingPage';
+
 function App() {
-  return (
-    <div className="min-h-screen bg-light-bg flex items-center justify-center"></div>
-  );
+  return <LandingPage />;
 }
 
 export default App;
