@@ -18,6 +18,11 @@ export default {
       backgroundImage: {
         'gradient-blue': 'linear-gradient(90deg, #1B2847 0%, #2B3A5C 100%)',
       },
+      fontFamily: {
+        'josefin': ['"Josefin Sans"', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
