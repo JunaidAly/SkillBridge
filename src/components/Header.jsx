@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
 
 function Header() {
@@ -6,13 +7,13 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
               src="/assets/logo.png"
               alt="SkillBridge Logo"
               className="h-10"
             />
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -32,9 +33,11 @@ function Header() {
 
           {/* Buttons */}
           <div className="flex items-center space-x-1 sm:space-x-4">
-            <Button variant="secondary">
-              Sign In
-            </Button>
+            <Link to="/login">
+              <Button variant="secondary">
+                Sign In
+              </Button>
+            </Link>
             <Button variant="primary">
               Get Started
             </Button>
