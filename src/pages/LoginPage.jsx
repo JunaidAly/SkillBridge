@@ -88,7 +88,7 @@ function LoginPage() {
 
           <p className="text-center mt-8 font-family-poppins text-sm text-[#575757]">
             Don't have an account?{" "}
-            <a href="#" className="text-teal font-medium hover:underline">
+            <a href="/signup" className="text-teal font-medium hover:underline">
               Register
             </a>
           </p>
