@@ -1,3 +1,5 @@
+import { EyeOff } from "lucide-react";
+
 function Input({
   type = "text",
   placeholder,
@@ -13,12 +15,10 @@ function Input({
     "font-poppins w-full px-4 py-3 rounded-lg border outline-none transition-all";
 
   const variants = {
-    default:
-      "border-[#D0D0D0] focus:border-teal focus:ring-1 focus:ring-teal",
+    default: "border-[#D0D0D0] focus:border-teal focus:ring-1 focus:ring-teal",
     filled:
       "bg-light-bg border-transparent focus:border-teal focus:ring-1 focus:ring-teal",
-    outline:
-      "border-dark-blue focus:border-teal focus:ring-1 focus:ring-teal",
+    outline: "border-dark-blue focus:border-teal focus:ring-1 focus:ring-teal",
   };
 
   return (
@@ -31,16 +31,16 @@ function Input({
           {label}
         </label>
       )}
-      <input
-        type={type}
-        id={name}
-        name={name}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        className={`${baseStyles} ${variants[variant]} ${className}`}
-        {...props}
-      />
+      <div className="relative">
+        <input
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          className={`${baseStyles} ${variants[variant]} ${className}`}
+          {...props}
+        />
+        {type === "password" && <EyeOff className="absolute right-2 top-1/2 -translate-y-1/2" />}
+      </div>
     </div>
   );
 }

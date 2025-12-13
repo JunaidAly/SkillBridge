@@ -1,6 +1,6 @@
 import Input from "../ui/Input";
 import Button from "../ui/AuthButton";
-
+import { EyeOff } from "lucide-react";
 function SignUpPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,51 +29,92 @@ function SignUpPage() {
           className="absolute bottom-8 right-8 w-24 h-24 object-contain"
         />
 
-        <img
-          src="/logo.svg"
-          alt="SkillBridge Logo"
-          className="h-16 mb-8"
-        />
+        <img src="/logo.svg" alt="SkillBridge Logo" className="h-16 mb-8" />
         <h2 className="font-family-poppins text-4xl font-bold text-white mb-4">
           Start Learning Today
         </h2>
         <p className="font-family-poppins text-lg text-white/80 max-w-md mb-8">
-          Create your account and start exchanging skills with a global community of learners and mentors.
+          Create your account and start exchanging skills with a global
+          community of learners and mentors.
         </p>
 
         {/* Points */}
         <ul className="text-left space-y-4 max-w-sm">
           <li className="flex items-center gap-3">
             <span className="w-6 h-6 bg-teal rounded-full flex items-center justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="black"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </span>
-            <span className="font-family-poppins text-white/90">AI-powered skill matching</span>
+            <span className="font-family-poppins text-white/90">
+              AI-powered skill matching
+            </span>
           </li>
           <li className="flex items-center gap-3">
             <span className="w-6 h-6 bg-teal rounded-full flex items-center justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="black"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </span>
-            <span className="font-family-poppins text-white/90">Credit based learning system</span>
+            <span className="font-family-poppins text-white/90">
+              Credit based learning system
+            </span>
           </li>
           <li className="flex items-center gap-3">
             <span className="w-6 h-6 bg-teal rounded-full flex items-center justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="black"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </span>
-            <span className="font-family-poppins text-white/90">Global community access</span>
+            <span className="font-family-poppins text-white/90">
+              Global community access
+            </span>
           </li>
           <li className="flex items-center gap-3">
             <span className="w-6 h-6 bg-teal rounded-full flex items-center justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="black"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </span>
-            <span className="font-family-poppins text-white/90">Secure & verified accounts</span>
+            <span className="font-family-poppins text-white/90">
+              Secure & verified accounts
+            </span>
           </li>
         </ul>
       </div>
@@ -103,12 +144,14 @@ function SignUpPage() {
               type="email"
               placeholder="Enter your email"
             />
-            <Input
-              label="Password"
-              name="password"
-              type="password"
-              placeholder="Create a password"
-            />
+              <Input
+                label="Password"
+                name="password"
+                type="password"
+                placeholder="Create a password"
+              />
+
+          
 
             <Button variant="primary" className="w-full rounded-full py-4 mt-2">
               Create Account
@@ -117,7 +160,9 @@ function SignUpPage() {
 
           <div className="flex items-center gap-4 my-6">
             <div className="flex-1 h-px bg-[#D0D0D0]"></div>
-            <span className="font-family-poppins text-lg text-[#575757]">or continue with</span>
+            <span className="font-family-poppins text-lg text-[#575757]">
+              or continue with
+            </span>
             <div className="flex-1 h-px bg-[#D0D0D0]"></div>
           </div>
 
