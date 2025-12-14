@@ -8,6 +8,7 @@ import DashboardPage from "./pages/DashboardPage";
 import ProfilePage from "./pages/ProfilePage";
 import ViewProfilePage from "./pages/ViewProfilePage";
 import ChatPage from "./pages/ChatPage";
+import FeedbackPage from "./pages/FeedbackPage";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/chat",
         element: <ChatPage />,
+      },
+      {
+        path: "/feedback",
+        element: <FeedbackPage />,
       },
     ],
   },
