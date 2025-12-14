@@ -6,6 +6,7 @@ import TwoFactorPage from "./pages/TwoFactorPage";
 import DashboardLayout from "./layouts/DashboardLayout";
 import DashboardPage from "./pages/DashboardPage";
 import ProfilePage from "./pages/ProfilePage";
+import ViewProfilePage from "./pages/ViewProfilePage";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <ProfilePage />,
+      },
+      {
+        path: "/profile/:id",
+        element: <ViewProfilePage />,
       },
     ],
   },

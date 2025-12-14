@@ -65,7 +65,9 @@ function Sidebar() {
         <nav className="flex-1 px-4">
           <ul className="space-y-2">
             {navItems.map((item) => {
-              const isActive = location.pathname === item.path;
+              const isActive =
+                location.pathname === item.path ||
+                (item.path === "/profile" && location.pathname.startsWith("/profile/"));
               const Icon = item.icon;
               return (
                 <li key={item.name}>

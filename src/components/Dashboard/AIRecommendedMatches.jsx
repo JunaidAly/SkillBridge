@@ -1,4 +1,5 @@
 import { Sparkles, Search, Star, Monitor, MapPin, Clock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 
 const matches = [
@@ -38,6 +39,8 @@ const matches = [
 ];
 
 function AIRecommendedMatches() {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white rounded-xl p-6 shadow-sm">
       {/* Header */}
@@ -140,7 +143,11 @@ function AIRecommendedMatches() {
 
             {/* Action Buttons */}
             <div className="flex gap-3 mt-5">
-              <Button variant="outline" className="flex-1 py-2.5">
+              <Button
+                variant="outline"
+                className="flex-1 py-2.5"
+                onClick={() => navigate(`/profile/${match.id}`)}
+              >
                 View Profile
               </Button>
               <Button variant="primary" className="flex-1 py-2.5">
