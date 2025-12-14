@@ -9,6 +9,7 @@ import ProfilePage from "./pages/ProfilePage";
 import ViewProfilePage from "./pages/ViewProfilePage";
 import ChatPage from "./pages/ChatPage";
 import FeedbackPage from "./pages/FeedbackPage";
+import CreditsPage from "./pages/CreditsPage";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/feedback",
         element: <FeedbackPage />,
+      },
+      {
+        path: "/credits",
+        element: <CreditsPage />,
       },
     ],
   },
