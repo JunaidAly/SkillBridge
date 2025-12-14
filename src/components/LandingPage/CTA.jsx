@@ -1,4 +1,4 @@
-import Button from '../ui/Button';
+import Button from '../../ui/Button.jsx';
 import { ArrowRight } from 'lucide-react';
 
 function CTA() {
