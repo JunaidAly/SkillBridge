@@ -1,4 +1,4 @@
-import { Sparkles, Search, Star, Monitor, MapPin, Clock } from "lucide-react";
+import { Sparkles, Search, Star, Monitor, MapPin, Clock, Brain } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 
@@ -45,7 +45,7 @@ function AIRecommendedMatches() {
     <div className="bg-white rounded-xl p-6 shadow-sm">
       {/* Header */}
       <div className="flex items-center gap-2 mb-6">
-        <Sparkles className="text-teal" size={20} />
+        <Sparkles className="text-black" size={20} />
         <h2 className="font-family-poppins text-xl font-semibold text-black">
           AI Recommended Matches
         </h2>
@@ -69,7 +69,7 @@ function AIRecommendedMatches() {
       {/* AI Match Score Badge */}
       <div className="flex items-center gap-2 mb-6 px-2 py-3 border border-teal bg-light-teal rounded-full">
         <span className="flex items-center gap-1.5 px-3 py-1.5 ">
-          <Sparkles className="text-teal" size={14} />
+          <Brain className="text-teal" size={14} />
           <span className="font-family-poppins text-sm font-medium text-black">
             AI Match Score
           </span>
@@ -118,7 +118,7 @@ function AIRecommendedMatches() {
                     <span className="font-family-poppins text-gray">{match.rating}</span>
                   </span>
                   <span className="flex items-center gap-1">
-                    <Sparkles className="text-teal" size={14} />
+                    <Brain className="text-teal" size={14} />
                     <span className="font-family-poppins text-teal font-medium">
                       {match.matchScore}% Match
                     </span>
