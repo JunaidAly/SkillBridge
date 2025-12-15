@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { LayoutDashboard, User, CreditCard, MessageSquare, MessageCircle, LogOut, Menu, X } from "lucide-react";
+import { LayoutDashboard, CircleUserRound, CreditCard, MessageSquare, MessageCircle, LogOut, Menu, X } from "lucide-react";
 
 const navItems = [
   { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
-  { name: "Profile", path: "/profile", icon: User },
+  { name: "Profile", path: "/profile", icon: CircleUserRound },
   { name: "Credits", path: "/credits", icon: CreditCard },
   { name: "Chat & Schedule", path: "/chat", icon: MessageSquare },
   { name: "Feedback", path: "/feedback", icon: MessageCircle },
@@ -80,7 +80,7 @@ function Sidebar() {
                         : "text-gray hover:bg-gray-50"
                     }`}
                   >
-                    <Icon size={20} />
+                    <Icon size={24} />
                     {item.name}
                   </Link>
                 </li>

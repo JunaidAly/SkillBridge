@@ -26,7 +26,7 @@ function Input({
       {label && (
         <label
           htmlFor={name}
-          className="font-family-poppins text-sm font-medium text-[#575757]"
+          className="font-family-poppins text-sm font-medium text-gray"
         >
           {label}
         </label>

@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Develop",
+    "Frontend_Dev_Scope",
+    "main"
+  ],
+  "parent": {
+    "Develop": "main",
+    "Frontend_Dev_Scope": "main",
+    "main": null
+  },
+  "order": [
+    "main",
+    "Develop",
+    "Frontend_Dev_Scope"
+  ]
+}
