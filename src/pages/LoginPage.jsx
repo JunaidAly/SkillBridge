@@ -1,6 +1,6 @@
 import Input from "../ui/Input";
 import Button from "../ui/AuthButton";
-
+import { Link } from "react-router-dom";
 function LoginPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,7 +15,7 @@ function LoginPage() {
             <h1 className="font-family-poppins text-4xl font-semibold text-black mb-2">
               Welcome Back!
             </h1>
-            <p className="font-family-poppins text-sm text-[#575757]">
+            <p className="font-family-poppins text-sm text-gray">
               Sign in to continue your learning journey.
             </p>
           </div>
@@ -39,15 +39,16 @@ function LoginPage() {
                 Forgot password?
               </a>
             </div>
-
+            <Link to={"/dashboard"}>
             <Button variant="primary" className="w-full rounded-full py-4 mt-2">
               Sign In
             </Button>
+            </Link>
           </form>
 
           <div className="flex items-center gap-4 my-6">
             <div className="flex-1 h-px bg-[#D0D0D0]"></div>
-            <span className="font-family-poppins text-lg text-[#575757]">or continue with</span>
+            <span className="font-family-poppins text-lg text-gray">or continue with</span>
             <div className="flex-1 h-px bg-[#D0D0D0]"></div>
           </div>
 
@@ -86,7 +87,7 @@ function LoginPage() {
             </button>
           </div>
 
-          <p className="text-center mt-8 font-family-poppins text-sm text-[#575757]">
+          <p className="text-center mt-8 font-family-poppins text-sm text-gray">
             Don't have an account?{" "}
             <a href="/signup" className="text-teal font-medium hover:underline">
               Register
